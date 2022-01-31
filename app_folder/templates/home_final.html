@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="static/style.css">
+        <title>DS30-Project3</title>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark py-3 fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">Natural Language Processing</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="/test_table" class="nav-link">Tweet Prediction</a>
+                        <li class="nav-item">
+                            <a href="#learn" class="nav-link">Learn More</a>
+                        <li class="nav-item">
+                            <a href="#questions" class="nav-link">Frequently Asked Questions</a>
+                        <li class="nav-item">
+                            <a href="#creator" class="nav-link">Creator</a>    
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Get Started -->
+        <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <div>
+                        <h1>Process <span class="text-primary">
+                            Tweets from Twitter
+                        </span></h1>
+                        <p class="lead my-4">
+                            Have you ever had a moment in life where you thought of a quote, lyric, or phrase.. but, you don't know where it came from? Natural language processing is a powerful tool, that if used correctly could potentially bridge that gap. The application I've built will allow you to analyze two user's tweets on twitter, create a pseudo tweet, then use NLP to see which user was most likely to tweet it.
+                        </p>
+                        <a href="/test_table" class="btn btn-primary btn-lg active" role="button">Get Started</a>
+                    </div>
+                    <img class="img-fluid w-50 d-none d-sm-block" src="static/undraw_viral_tweet_gndb.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Learn Sections -->
+        <section id="learn" class="p-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md">
+                        <img src="static/undraw_mobile_testing_reah.svg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md p-5">
+                        <h2>Learn About NLP</h2>
+                        <p class="lead">
+                            Learn the Fundamentals of NLP -
+                        </p>
+                        <p>
+                            Natural Language Processing (NLP) and Natural Language Generation (NLG) have gained importance in the field of Machine Learning (ML) due to the critical need to understand text, with its varying structure, implied meanings, sentiments, and intent. Natural Language Processing and Natural Language Generation have removed many of the communication barriers between humans and computers by translating machine language into human language, and by creating opportunities for humans to accomplish tasks that were impossible before.
+                        </p>
+                        <a href="https://pramodaiml.medium.com/nlp-fundamentals-for-beginners-50561d0dd1af" class="btn btn-primary mt-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="learn" class="p-5 bg-dark text-light">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md p-5">
+                        <h2>Learn About Spacy</h2>
+                        <p class="lead">
+                            Learn the Fundamentals of Spacy -
+                        </p>
+                        <p>
+                            Spacy is designed to help you do real work — to build real products, or gather real insights. The library respects your time, and tries to avoid wasting it. It's easy to install, and its API is simple and productive. Spacy excels at large-scale information extraction tasks. It's written from the ground up in carefully memory-managed Cython. If your application needs to process entire web dumps, Spacy is the library you want to be using.
+                        </p>
+                        <a href="https://spacy.io/usage/spacy-101" class="btn btn-primary mt-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                        </a>
+                    </div>
+                    <div class="col-md">
+                        <img src="static/undraw_Work_from_anywhere_re_s2i6.svg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Question Accordion -->
+        <section id="questions" class="p-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+                <div class="accordion accordion-flush" id="questions">
+                    <!-- Item 1 -->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                            What do you understand by Natural Language Processing?
+                        </button>
+                    </h2>
+                    <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">Natural Language Processing is a field of computer science that deals with communication between computer systems and humans. It is a technique used in Artificial Intelligence and Machine Learning. It is used to create automated software that helps understand human spoken languages to extract useful information from the data it gets in the form of audio. Techniques in NLP allow computer systems to process and interpret data in the form of natural languages.</div>
+                    </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                            What is Latent Semantic Indexing (LSI)?
+                        </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse"data-bs-parent="#questions">
+                        <div class="accordion-body">Latent semantic indexing is a mathematical technique used to improve the accuracy of the information retrieval process. The design of LSI algorithms allows machines to detect the hidden (latent) correlation between semantics (words). To enhance information understanding, machines generate various concepts that associate with the words of a sentence. The technique used for information understanding is called singular value decomposition. It is generally used to handle static and unstructured data. The matrix obtained for singular value decomposition contains rows for words and columns for documents. This method best suits to identify components and group them according to their types.</div>
+                    </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                            What is Regular Grammar?
+                        </button>
+                    </h2>
+                    <div id="question-three" class="accordion-collapse collapse"data-bs-parent="#questions">
+                        <div class="accordion-body">Regular grammar is used to represent a regular language. A regular grammar comprises rules in the form of A -> a, A -> aB, and many more. The rules help detect and analyze strings by automated computation.</div>
+                    </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                            What is Parsing in the context of NLP?
+                        </button>
+                        </h2>
+                        <div id="question-four" class="accordion-collapse collapse"data-bs-parent="#questions">
+                        <div class="accordion-body">Parsing in NLP refers to the understanding of a sentence and its grammatical structure by a machine. Parsing allows the machine to understand the meaning of a word in a sentence and the grouping of words, phrases, nouns, subjects, and objects in a sentence. Parsing helps analyze the text or the document to extract useful insights from it.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+                            What is TF-IDF?
+                        </button>
+                        </h2>
+                        <div id="question-five" class="accordion-collapse collapse"data-bs-parent="#questions">
+                        <div class="accordion-body">TFIDF or Term Frequency-Inverse Document Frequency indicates the importance of a word in a set. It helps in information retrieval with numerical statistics. For a specific document, TF-IDF shows a frequency that helps identify the keywords in a document. The major use of TF-IDF in NLP is the extraction of useful information from crucial documents by statistical data. It is ideally used to classify and summarize the text in documents and filter out stop words.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creator -->
+        <section id="creator" class="p-5 bg-primary">
+            <div class="container">
+                <h2 class="text-center text-white">Creator</h2>
+                <p class="lead text-center text-white mb-5">
+                    My name is Nigel Clinton. I'm currently enrolled in Lambda Technical School. I'm on month three of my program and decided to create a website for my project. Our objective was to create a web interface, access an API, create a database, and create a NLP model to compair tweets from specified users on Twitter.
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <div class="card bg-dark">
+                            <div class="card-body text-center text-white">
+                                <img src="static/Profile.jpg" class="rounded-circle mb-3" alt="" width="250" height="250">
+                                <h3 class="card-title mb-3">Nigel Clinton</h3>
+                                <p class="card-text">Listed below will be my social media links. Please feel free to reach out and contact me about anything data science related, or even if you want to make a friend in the industry! I'd love to connect! </p>
+                                <a href="https://twitter.com/Nigel_Clinton"><i class="bi bi-twitter text-primary mx-1"></i></a>
+                                <a href="https://www.linkedin.com/in/nigel-clinton/"><i class="bi bi-linkedin text-primary mx-1"></i></a>
+                                <a href="https://github.com/NigelClinton"><i class="bi bi-github text-primary mx-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="p-5 bg-dark text-white text-center position-ralative">
+            <div class="container">
+                <p class="lead">Copyright &copy; 2021 Nigel Clinton</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    </body>
+</html>

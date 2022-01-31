@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="static/style.css">
+        <title>DS30-Project3</title>
+    </head>
+    <body>
+
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark py-3 fixed-top">
+            <div class="container">
+                <a href="/" class="navbar-brand">Natural Language Processing</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="/test_table" class="nav-link">Tweet Prediction</a>
+                        <li class="nav-item">
+                            <a href="/#learn" class="nav-link">Learn More</a>
+                        <li class="nav-item">
+                            <a href="/#questions" class="nav-link">Frequently Asked Questions</a>
+                        <li class="nav-item">
+                            <a href="/#creator" class="nav-link">Creator</a>    
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Prediction -->
+        <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <div>
+                        <div class="row align-items-center justify-content-between">
+                        <h1><span class="text-primary">{{ message }}</span></h1></div>
+                        <p class="lead my-4">
+                            If You'd Like to Predict Another Tweet Click the Link Below!
+                        </p>
+                        <div class="row align-items-center justify-content-between">
+                        <a href="/test_table" class="btn btn-primary btn-lg active" role="button">Predict More</a>
+                        </div>
+                    </div>
+                    <img class="img-fluid w-50 d-none d-sm-block" src="static/undraw_accept_tasks_po1c.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Flask Section -->
+        <section id="learn" class="p-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md">
+                        <img src="static/undraw_book_reading_kx9s_(1).svg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md p-5">
+                        <h2>Learn About Flask</h2>
+                        <p class="lead">
+                            Are you interested in building a web application for your models? Check out Flask - 
+                        </p>
+                        <p>
+                            Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.
+                        </p>
+                        <a href="https://flask.palletsprojects.com/en/2.0.x/quickstart/" class="btn btn-primary mt-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="p-5 bg-dark text-white text-center position-ralative">
+            <div class="container">
+                <p class="lead">Copyright &copy; 2021 Nigel Clinton</p>
+                <a href="https://twitter.com/Nigel_Clinton"><i class="bi bi-twitter text-primary mx-2"></i></a>
+                <a href="https://www.linkedin.com/in/nigel-clinton/"><i class="bi bi-linkedin text-primary mx-2"></i></a>
+                <a href="https://github.com/NigelClinton"><i class="bi bi-github text-primary mx-2"></i></a>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    </body>
+</html>
